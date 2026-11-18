@@ -4,27 +4,15 @@ A versão em português do [Humanizer](https://github.com/blader/humanizer), a s
 
 O Humanizer original caça palavras e frases em inglês. Aqui estão os mesmos 26 padrões, o mesmo jeito de trabalhar e o mesmo formato de resposta, com as expressões que aparecem em texto escrito em português. É uma adaptação independente, sem ligação com o autor do original.
 
-**Antes:**
+**Antes** (texto inventado para o teste):
 
-> Hoje tivemos um momento decisivo, fundamental e estratégico pra nossa empresa. 🚀
->
-> No cenário atual, não se trata apenas de vender mais — trata-se de construir relacionamentos duradouros. Fechamos outubro com 14 clientes novos, dos quais 9 vieram por indicação, reforçando o nosso compromisso com a excelência. A Marina, do comercial, respondeu todo lead em menos de 2 horas, garantindo uma experiência incrível pra quem chega.
->
-> O resultado? Um marco na nossa trajetória.
->
-> Especialistas apontam que empresas que investem em pessoas crescem mais. E isso muda tudo.
->
-> E você, o que acha? Me conta nos comentários!
+> Fundada em 2019, a Oficina do Pão serve como referência em panificação artesanal no coração de Curitiba. Nossa equipe conta com 6 padeiros e ostenta uma ampla gama de pães de fermentação natural, refletindo o nosso compromisso com a qualidade. Não é apenas uma padaria: é uma experiência. Abrimos de Terça a Domingo, das 7h às 19h.
 
 **Depois:**
 
-> Fechamos outubro com 14 clientes novos, e 9 deles vieram por indicação.
->
-> A Marina, do comercial, respondeu todo lead em menos de 2 horas. Queremos que quem chega fique com a gente por muito tempo.
->
-> E você, o que acha? Me conta nos comentários!
+> A Oficina do Pão é uma padaria artesanal de Curitiba, fundada em 2019. Nossos 6 padeiros fazem vários tipos de pão de fermentação natural. Abrimos de terça a domingo, das 7h às 19h.
 
-Junto com a versão final ela avisou o que cortou. A frase dos especialistas saiu por não ter fonte, e a primeira linha saiu porque não dizia o que aconteceu naquele dia. Nos dois casos ela pediu o fato para pôr de volta.
+Junto com a versão final ela avisou o que cortou e pediu o que faltava. "Referência em panificação" saiu por ser elogio sem fato por trás, e para "ampla gama" ela perguntou quantos ou quais pães, para trocar pelo número.
 
 Ela edita para quem lê. Não tenta passar em detector de IA, e o original avisa a mesma coisa: os detectores continuam marcando a maior parte do que sai.
 
@@ -38,7 +26,7 @@ Cole esta frase na conversa:
 Claude, instala a skill que tá nesse repositório pra eu usar em qualquer projeto e confere antes se tá tudo seguro: https://github.com/feBittar/humanizer-br
 ```
 
-O Claude lê o `SKILL.md`, diz o que ele faz e copia o arquivo para `~/.claude/skills/humanizer-br/`. Para instalar à mão, copie o `SKILL.md` para essa pasta.
+O Claude lê o `SKILL.md`, diz o que ele faz e copia o arquivo para `~/.claude/skills/humanizer-br/`. Ele pede a sua permissão antes de baixar e antes de gravar. Se o `/humanizer-br` não aparecer depois, feche e abra o Claude Code. Para instalar à mão, copie o `SKILL.md` para essa pasta.
 
 ### No claude.ai
 
@@ -70,7 +58,7 @@ Para reescrever um arquivo, diga o caminho:
 humaniza o texto de posts/lancamento.md
 ```
 
-Num arquivo ela muda só a prosa. Código, comandos, caminhos, dados e links ficam como estão.
+Num arquivo ela muda só a prosa. Código, comandos, caminhos, dados e links ficam como estão. O resultado é gravado por cima do arquivo, então guarde uma cópia se ele for importante.
 
 ### Com a sua voz
 
@@ -146,4 +134,4 @@ Este repositório tem só a skill. Os pacotes de plugin do original não vieram.
 
 ## Licença
 
-MIT, a mesma do original. Veja o arquivo [LICENSE](LICENSE).
+MIT, a mesma do original. Veja o arquivo [LICENSE](LICENSE). A adaptação é do Felipe, [@ofelipemart](https://www.instagram.com/ofelipemart/) no Instagram.
